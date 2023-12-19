@@ -77,9 +77,10 @@ function AppProvider({ children }) {
     function addToFavorites(idMeal) {
         
         let meal = meals.find((item) => item.idMeal === idMeal);
-        let alreadyFavorite = favorites.indexOf(meal);
-        if (alreadyFavorite >= 0) {
+        let alreadyFavorite = favorites.filter((item) => item.idMeal === meal.idMeal);
+        if (alreadyFavorite) {
             return;
+            
         }
         let arrayMeal = [...favorites, meal];
         setFavorites(arrayMeal);
