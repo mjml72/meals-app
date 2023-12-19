@@ -1,0 +1,94 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+
+}
+
+.modal-container {
+    max-width: 700px;
+    width: 95%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 7rem auto;
+}
+
+.modal-info {
+    padding: 1rem;
+}
+
+.modal-container a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.modal-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-container h4 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.favorites {
+    background-color: rgb(37, 31, 31);
+    color: white;
+    min-height: 100px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.favorites-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.favorites-container h5 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.favorite-image {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.imagefav {
+    width: 80px;
+    height: 100px;
+    text-align: center;
+}
+
+.imagefav img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.remove {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: red;
+}
